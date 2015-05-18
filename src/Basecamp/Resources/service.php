@@ -391,7 +391,15 @@ return array(
         'getProjectsByPerson' => array(
             'httpMethod' => 'GET',
             'uri'       => 'people/{personId}/projects.json',
-            'summary'   => 'Get projects a person has access to' . PHP_EOL . '[Basecamp API: People](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)'
+            'summary'   => 'Get projects a person has access to' . PHP_EOL . '[Basecamp API: People](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)',
+            'parameters' => array(
+                'personId' => array(
+                    'location' => 'uri',
+                    'description' => 'Person id',
+                    'type' => 'integer',
+                    'required' => true,
+                )
+            )
         ),
         'getGroups' => array(
             'httpMethod' => 'GET',
