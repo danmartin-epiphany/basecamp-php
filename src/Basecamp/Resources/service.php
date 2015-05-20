@@ -173,6 +173,11 @@ return array(
                     'type' => array( 'array', 'object' ),
                     'required' => false,
                 ),
+                'due_at' => array(
+                    'location' => 'json',
+                    'type' => 'string',
+                    'required' => false,
+                ),
             )
         ),
         'createCommentByTodo' => array(
